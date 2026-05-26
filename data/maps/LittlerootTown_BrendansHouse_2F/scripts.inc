@@ -279,7 +279,8 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "Good! Everything's put away neatly!\p"
 	.string "They finished moving everything in\n"
 	.string "downstairs, too.\p"
-	.string "POKéMON movers are so convenient!\p"
+	.string "POKéMON movers are so convenient!\n"
+	.string "One of them labeled the boxes by vibe.\p"
 	.string "Oh, you should make sure that\n"
 	.string "everything's all there on your desk.$"
 
@@ -289,6 +290,8 @@ PlayersHouse_2F_Text_Notebook:
 	.string "Open the MENU with START.\p"
 	.string "ADVENTURE RULE NO. 2\n"
 	.string "Record your progress with SAVE.\p"
+	.string "ADVENTURE RULE NO. 3\n"
+	.string "Do not trust the first balance pass.\p"
 	.string "The remaining pages are blank…$"
 
 Common_Text_LookCloserAtMap:

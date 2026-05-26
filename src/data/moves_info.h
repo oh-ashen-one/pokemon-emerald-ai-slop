@@ -23024,4 +23024,73 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
+
+    [MOVE_PROMPT_ROT] =
+    {
+        .name = COMPOUND_STRING("Prompt Rot"),
+        .description = COMPOUND_STRING(
+            "A soggy idea sprouts and\n"
+            "may poison the foe."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_GRASS,
+        .accuracy = 100,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_POISON,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .battleAnimScript = gBattleAnimMove_Absorb,
+    },
+
+    [MOVE_TOKEN_BURN] =
+    {
+        .name = COMPOUND_STRING("Token Burn"),
+        .description = COMPOUND_STRING(
+            "Spends too much heat and\n"
+            "may burn the foe."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .battleAnimScript = gBattleAnimMove_Ember,
+    },
+
+    [MOVE_SLOP_JET] =
+    {
+        .name = COMPOUND_STRING("Slop Jet"),
+        .description = COMPOUND_STRING(
+            "Blasts compressed nonsense\n"
+            "and may lower SPEED."),
+        .effect = EFFECT_HIT,
+        .power = 45,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 25,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPEED_MINUS_1,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .battleAnimScript = gBattleAnimMove_WaterGun,
+    },
 };

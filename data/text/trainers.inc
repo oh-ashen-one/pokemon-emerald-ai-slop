@@ -1,15 +1,15 @@
 Route102_Text_CalvinIntro:
-	.string "If you have POKéMON with you, then\n"
-	.string "you're an official POKéMON TRAINER!\l"
+	.string "If you have a starter with weird\n"
+	.string "custom moves, you're official!\p"
 	.string "You can't say no to my challenge!$"
 
 Route102_Text_CalvinDefeated:
 	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+	.string "My prompt was undercooked…$"
 
 Route102_Text_CalvinPostBattle:
-	.string "Listen, you. If you're strong,\n"
-	.string "you should have told me before!$"
+	.string "Listen, you. If your starter knows\n"
+	.string "brand-new nonsense, warn people!$"
 
 Route102_Text_CalvinRegister:
 	.string "I've been working hard at this since\n"
@@ -36,15 +36,15 @@ Route102_Text_CalvinRematchPostBattle:
 
 Route102_Text_AllenIntro:
 	.string "Did you just become a TRAINER?\n"
-	.string "We're both beginners!$"
+	.string "Great, another live balance test!$"
 
 Route102_Text_AllenDefeated:
-	.string "I called you because I thought\n"
-	.string "I could beat you…$"
+	.string "I called you because the matchup\n"
+	.string "chart looked fake…$"
 
 Route102_Text_AllenPostBattle:
 	.string "I haven't won once yet…\n"
-	.string "I wish I would win soon…$"
+	.string "I should stop trusting tables…$"
 
 Route102_Text_RickIntro:
 	.string "Hahah! Our eyes met!\n"

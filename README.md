@@ -1,53 +1,56 @@
-# About `pokeemerald-expansion`
+# Pokemon Emerald: AI Slop
 
-![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
+`Pokemon Emerald: AI Slop` is a public ROM hack project built on top of
+[`pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion).
+The goal is a shippable, funny Emerald rebalance with visible AI-era nonsense:
+rewritten early-game dialogue, altered starter choices, tuned early trainers,
+light encounter changes, and a few custom-flavored moves.
 
-<!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
+This repository contains source code only. It does not include any commercial
+ROMs, generated `.gba` files, save files, or copyrighted game dumps.
 
-**`pokeemerald-expansion`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon ROM hacks. **`pokeemerald-expansion`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project. **It is not a playable Pokémon game on its own.**
+## Current v0.1 Direction
 
-# [Features](FEATURES.md)
+- Existing-sprite starter trio: Shroomish, Numel, and Corphish.
+- Early route identity pass for Route 101 and Route 102.
+- Rival and early trainer tuning around the new starter trio.
+- Dialogue rewrite pass for the opening bedroom/rival sequence.
+- No custom sprites, new music, or major map work for v0.1.
 
-**`pokeemerald-expansion`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), along with popular quality-of-life enhancements designed to streamline development and improve the player experience. A full list of those features can be found in [`FEATURES.md`](FEATURES.md).
+## Building
 
-# [Credits](CREDITS.md)
+Follow the upstream macOS setup in [`INSTALL.md`](INSTALL.md). The short version
+is that the build expects Xcode Command Line Tools, `libpng`, `pkg-config`, and
+devkitARM from devkitPro.
 
- [![](https://img.shields.io/github/all-contributors/rh-hideout/pokeemerald-expansion/upcoming)](CREDITS.md)
+Once the toolchain is installed:
 
-If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout)**. Optionally, include the version number for clarity.
-
+```sh
+make
 ```
-Based off RHH's pokeemerald-expansion 1.15.2 https://github.com/rh-hideout/pokeemerald-expansion/
+
+The generated ROM, when the build succeeds, is `pokeemerald.gba`. That file is
+intentionally ignored by Git.
+
+## Upstream
+
+This hack tracks Rom Hacking Hideout's expansion base as the `RHH` remote:
+
+```sh
+git remote add RHH https://github.com/rh-hideout/pokeemerald-expansion.git
+git fetch RHH
 ```
 
-Please consider [crediting all contributors](CREDITS.md) involved in the project!
+Periodic upstream updates should be merged deliberately after a clean local
+build.
 
-# Choosing `pokeemerald` or **`pokeemerald-expansion`**
+## Credits
 
-- **`pokeemerald-expansion`** supports multiplayer functionality with other games built on **`pokeemerald-expansion`**. It is not compatible with official Pokémon games.
-- If compatibility with official games is important, use [`pokeemerald`](https://github.com/pret/pokeemerald). Otherwise, we recommend using **`pokeemerald-expansion`**.
-- **`pokeemerald-expansion`** incorporates regular updates from `pokeemerald`, including bug fixes and documentation improvements.
+Based on RHH's `pokeemerald-expansion`:
+<https://github.com/rh-hideout/pokeemerald-expansion/>
 
-# [Getting Started](INSTALL.md)
+`pokeemerald-expansion` is built on pret's `pokeemerald` decompilation:
+<https://github.com/pret/pokeemerald/>
 
-❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches.
-
-If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
-
-## 📥 [Installing **`pokeemerald-expansion`**](INSTALL.md)
-## 🏗️ [Building **`pokeemerald-expansion`**](INSTALL.md#Building-pokeemerald-expansion)
-## 🚚 [Migrating from **`pokeemerald`**](INSTALL.md#Migrating-from-pokeemerald)
-## 🚀 [Updating **`pokeemerald-expansion`**](INSTALL.md#Updating-pokeemerald-expansion)
-
-# [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
-
-For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
-
-# [Contributions](CONTRIBUTING.md)
-If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
-
-# [Community](https://discord.gg/6CzjAG6GZk)
-
-[![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
-
-Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
+Please keep upstream credits intact when distributing builds, patches, or
+videos derived from this project.

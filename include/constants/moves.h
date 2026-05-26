@@ -906,8 +906,11 @@ enum __attribute__((packed)) Move
     MOVES_COUNT_GEN9,
 
     // Add any custom moves here, not further down!
+    MOVE_PROMPT_ROT = MOVES_COUNT_GEN9,
+    MOVE_TOKEN_BURN,
+    MOVE_SLOP_JET,
 
-    MOVES_COUNT = MOVES_COUNT_GEN9,
+    MOVES_COUNT,
 
     // Z Moves
     FIRST_Z_MOVE = MOVES_COUNT,
