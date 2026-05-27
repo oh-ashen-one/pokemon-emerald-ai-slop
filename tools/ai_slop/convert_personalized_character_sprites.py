@@ -181,7 +181,7 @@ def quantize_rgba(image, colors=15):
     quantized = rgb.quantize(colors=colors, method=Image.Quantize.MEDIANCUT)
     raw = quantized.getpalette()[: colors * 3]
     palette = [tuple(raw[i : i + 3]) for i in range(0, len(raw), 3)]
-    final_palette = [MAGENTA] + palette[:15]
+    final_palette = [MAGENTA] + [color for color in palette if not is_magenta_key(color)][:15]
     final_palette.extend([(0, 0, 0)] * (16 - len(final_palette)))
 
     out = Image.new("P", image.size, 0)
@@ -204,6 +204,7 @@ def quantize_rgba(image, colors=15):
 
 
 def write_jasc_palette(path, palette):
+    palette = sanitize_palette(palette)
     lines = ["JASC-PAL", "0100", "16"]
     lines.extend(f"{r} {g} {b}" for r, g, b in palette[:16])
     path.write_text("\r\n".join(lines) + "\r\n", encoding="ascii", newline="")
@@ -211,6 +212,20 @@ def write_jasc_palette(path, palette):
 
 def reflection_palette(palette):
     return [palette[0]] + [(r // 2, g // 2, b // 2) for r, g, b in palette[1:]]
+
+
+def is_magenta_key(color):
+    r, g, b = color
+    return r > 220 and g < 80 and b > 220
+
+
+def sanitize_palette(palette):
+    cleaned = list(palette[:16])
+    cleaned.extend([(0, 0, 0)] * (16 - len(cleaned)))
+    for i in range(1, 16):
+        if is_magenta_key(cleaned[i]):
+            cleaned[i] = cleaned[i - 1] if not is_magenta_key(cleaned[i - 1]) else (8, 8, 8)
+    return cleaned
 
 
 def save_indexed(image, path):
