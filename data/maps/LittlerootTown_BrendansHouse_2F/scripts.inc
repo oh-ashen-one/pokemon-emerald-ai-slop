@@ -244,7 +244,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC::
 	setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE
 	special DoPCTurnOnEffect
 	playse SE_PC_ON
-	msgbox PlayersHouse_2F_Text_VibeCoderPCBoot, MSGBOX_DEFAULT
+	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
 	special BedroomPC
 	releaseall
 	end
@@ -276,32 +276,29 @@ PlayersHouse_2F_Text_ClockIsStopped:
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "MOM: {PLAYER}, how do you like your\n"
 	.string "new room?\p"
-	.string "The movers asked if the trash pile\n"
-	.string "was structural, so they left it.\p"
-	.string "There are pizza boxes, loose cables,\n"
-	.string "and twelve cans by your dev desk.\p"
-	.string "Please set the clock before this\n"
-	.string "room ships to production.$"
+	.string "Good! Everything's put away neatly!\p"
+	.string "They finished moving everything in\n"
+	.string "downstairs, too.\p"
+	.string "POKéMON movers are so convenient!\n"
+	.string "One of them labeled the boxes by vibe.\p"
+	.string "Oh, you should make sure that\n"
+	.string "everything's all there on your desk.$"
 
 PlayersHouse_2F_Text_Notebook:
 	.string "{PLAYER} flipped open the notebook.\p"
-	.string "TODAY'S TODO LIST\p"
-	.string "1. Rename final_final_REAL.c\n"
-	.string "2. Delete nothing in build/\p"
-	.string "3. Shower after launch\p"
-	.string "The rest is just prompt fragments\n"
-	.string "and pizza grease.$"
-
-PlayersHouse_2F_Text_VibeCoderPCBoot:
-	.string "{PLAYER} booted up the crusty PC.\p"
-	.string "Twelve coding agents resumed at\n"
-	.string "once. The fan sounds expensive.$"
+	.string "ADVENTURE RULE NO. 1\n"
+	.string "Open the MENU with START.\p"
+	.string "ADVENTURE RULE NO. 2\n"
+	.string "Record your progress with SAVE.\p"
+	.string "ADVENTURE RULE NO. 3\n"
+	.string "Do not trust the first balance pass.\p"
+	.string "The remaining pages are blank…$"
 
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"
 	.string "{REGION} region map.$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
-	.string "It used to be a Nintendo GameCube.\p"
-	.string "Now it props up a sticky keyboard\n"
-	.string "and a load-bearing dev kit.$"
+	.string "It's a Nintendo GameCube.\p"
+	.string "A Game Boy Advance is connected to\n"
+	.string "serve as the Controller.$"
