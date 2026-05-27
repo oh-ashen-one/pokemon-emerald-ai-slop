@@ -11,27 +11,18 @@ CHARACTERS = {
     "prototype-lab-lead": {
         "source": "prototype-lab-lead-source.png",
         "intro": "graphics/birch_speech/birch.png",
-        "overworld": "graphics/object_events/pics/people/prof_birch.png",
     },
     "vibe-coder-boy": {
         "source": "vibe-coder-boy-source.png",
         "front": "graphics/trainers/front_pics/brendan.png",
         "back": "graphics/trainers/back_pics/brendan.png",
         "trainer_pal": "graphics/trainers/palettes/brendan.pal",
-        "overworld": "graphics/object_events/pics/people/brendan/walking.png",
-        "running": "graphics/object_events/pics/people/brendan/running.png",
-        "object_pal": "graphics/object_events/palettes/brendan.pal",
-        "reflection_pal": "graphics/object_events/palettes/brendan_reflection.pal",
     },
     "actual-coder-girl": {
         "source": "actual-coder-girl-source.png",
         "front": "graphics/trainers/front_pics/may.png",
         "back": "graphics/trainers/back_pics/may.png",
         "trainer_pal": "graphics/trainers/palettes/may.pal",
-        "overworld": "graphics/object_events/pics/people/may/walking.png",
-        "running": "graphics/object_events/pics/people/may/running.png",
-        "object_pal": "graphics/object_events/palettes/may.pal",
-        "reflection_pal": "graphics/object_events/palettes/may_reflection.pal",
     },
 }
 
