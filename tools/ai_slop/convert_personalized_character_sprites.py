@@ -70,22 +70,22 @@ OVERWORLD_OUTPUTS = {
     "prototype_lab_lead": {
         "paths": ["graphics/object_events/pics/people/prof_birch.png"],
         "max_height": 27,
-        "palette_paths": ["graphics/object_events/palettes/npc_3.pal"],
+        "fixed_palette": "graphics/object_events/palettes/npc_3.pal",
     },
     "mom": {
         "paths": ["graphics/object_events/pics/people/mom.png"],
         "max_height": 27,
-        "palette_paths": ["graphics/object_events/palettes/npc_4.pal"],
+        "fixed_palette": "graphics/object_events/palettes/npc_4.pal",
     },
     "nurse": {
         "paths": ["graphics/object_events/pics/people/nurse.png"],
         "max_height": 27,
-        "shared_palette": "npc_1_shared",
+        "fixed_palette": "graphics/object_events/palettes/npc_1.pal",
     },
     "mart_employee": {
         "paths": ["graphics/object_events/pics/people/mart_employee.png"],
         "max_height": 27,
-        "shared_palette": "npc_1_shared",
+        "fixed_palette": "graphics/object_events/palettes/npc_1.pal",
     },
 }
 
@@ -208,6 +208,16 @@ def write_jasc_palette(path, palette):
     lines = ["JASC-PAL", "0100", "16"]
     lines.extend(f"{r} {g} {b}" for r, g, b in palette[:16])
     path.write_text("\r\n".join(lines) + "\r\n", encoding="ascii", newline="")
+
+
+def load_jasc_palette(path):
+    lines = path.read_text(encoding="ascii").splitlines()
+    if len(lines) < 19 or lines[0] != "JASC-PAL":
+        raise ValueError(f"unsupported palette format: {path}")
+    count = int(lines[2])
+    palette = [tuple(map(int, line.split())) for line in lines[3 : 3 + count]]
+    palette.extend([(0, 0, 0)] * (16 - len(palette)))
+    return palette[:16]
 
 
 def reflection_palette(palette):
@@ -428,25 +438,17 @@ def convert_overworld_sprites():
         for role, poses in role_poses.items()
     }
 
-    npc_1_palette = derive_palette(role_sheets["nurse"], (role_sheets["mart_employee"],))
-    palettes = {
-        "npc_1_shared": npc_1_palette,
-    }
-
     previews = []
     for role, config in OVERWORLD_OUTPUTS.items():
         sheet = role_sheets[role]
-        if "shared_palette" in config:
-            palette = palettes[config["shared_palette"]]
+        if "fixed_palette" in config:
+            palette = load_jasc_palette(ROOT / config["fixed_palette"])
         else:
             palette = derive_palette(sheet)
 
         for palette_path in config.get("palette_paths", []):
             palette_to_write = reflection_palette(palette) if palette_path.endswith("_reflection.pal") else palette
             write_jasc_palette(ROOT / palette_path, palette_to_write)
-
-        if config.get("shared_palette") == "npc_1_shared":
-            write_jasc_palette(ROOT / "graphics/object_events/palettes/npc_1.pal", npc_1_palette)
 
         indexed = None
         for path in config["paths"]:
