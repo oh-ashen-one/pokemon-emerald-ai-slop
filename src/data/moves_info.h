@@ -23086,7 +23086,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPEED_MINUS_1,
+            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
             .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
