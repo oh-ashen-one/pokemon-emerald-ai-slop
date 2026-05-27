@@ -66,3 +66,18 @@ tools/aif2pcm/aif2pcm
 *.smolTM
 __pycache__
 .map_version
+
+# Local secrets and credentials.
+.env
+.env.*
+*.pem
+*.p12
+*.key
+id_rsa*
+id_ed25519*
+credentials.json
+
+# Local emulator saves and state files.
+*.sav
+*.srm
+*.state
