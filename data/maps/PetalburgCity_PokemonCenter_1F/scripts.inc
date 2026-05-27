@@ -53,42 +53,44 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 	return
 
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
-	.string "That PC-based POKéMON Storage\n"
+	.string "That PC-based prototype Storage\n"
 	.string "System…\p"
-	.string "Whoever made it must be some kind\n"
-	.string "of a scientific wizard!$"
+	.string "Whoever shipped it never wrote a\n"
+	.string "single test, and somehow it works!$"
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
-	.string "When my POKéMON ate an\n"
-	.string "ORAN BERRY, it regained HP!$"
+	.string "When my prototype ate an\n"
+	.string "ORAN BERRY, it regained HP!\p"
+	.string "Cheaper than asking an AI agent\n"
+	.string "to debug it, honestly.$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
-	.string "There are many types of POKéMON.\p"
-	.string "All types have their strengths and\n"
-	.string "weaknesses against other types.\p"
-	.string "Depending on the types of POKéMON,\n"
-	.string "a battle could be easy or hard.$"
+	.string "There are many types of prototype.\p"
+	.string "Every type has strengths and\n"
+	.string "weaknesses on the matchup chart.\p"
+	.string "Depending on the matchup, a balance\n"
+	.string "test could be easy or a regression.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
 	.string "For example, your TREECKO\n"
 	.string "is a GRASS type.\p"
-	.string "It's strong against the WATER and\n"
-	.string "GROUND types.\p"
-	.string "But, it's weak against FIRE-type\n"
-	.string "POKéMON.$"
+	.string "On the matchup chart it beats WATER\n"
+	.string "and GROUND types.\p"
+	.string "But it regresses hard against\n"
+	.string "FIRE-type prototypes.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
 	.string "For example, your TORCHIC\n"
 	.string "is a FIRE type.\p"
-	.string "It's strong against the GRASS and\n"
-	.string "BUG types.\p"
-	.string "But, it's weak against WATER-type\n"
-	.string "POKéMON.$"
+	.string "On the matchup chart it beats GRASS\n"
+	.string "and BUG types.\p"
+	.string "But it regresses hard against\n"
+	.string "WATER-type prototypes.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
 	.string "For example, your MUDKIP\n"
 	.string "is a WATER type.\p"
-	.string "It's strong against the FIRE type.\p"
-	.string "But, it's weak against GRASS-type\n"
-	.string "and ELECTRIC-type POKéMON.$"
+	.string "On the matchup chart it beats FIRE.\p"
+	.string "But it regresses against GRASS-type\n"
+	.string "and ELECTRIC-type prototypes.$"
 

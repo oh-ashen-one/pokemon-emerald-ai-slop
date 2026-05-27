@@ -68,21 +68,22 @@ PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
 PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
 	.string "You're…\n"
 	.string "Ah, you must be {PLAYER}{KUN}, right?\p"
-	.string "Thank you for playing with WALLY a\n"
-	.string "little while ago.\p"
-	.string "He's been frail and sickly ever\n"
-	.string "since he was a baby.\p"
-	.string "We've sent him to stay with my relatives\n"
+	.string "Thank you for pair-programming with\n"
+	.string "WALLY a little while ago.\p"
+	.string "He's been a fragile, anxious junior\n"
+	.string "dev ever since onboarding.\p"
+	.string "We've sent him to a quieter codebase\n"
 	.string "in VERDANTURF TOWN for a while.\p"
-	.string "The air is a lot cleaner there\n"
-	.string "than it is here.\p"
+	.string "The token budget is a lot calmer\n"
+	.string "there than it is here.\p"
 	.string "What's that? Where's WALLY?\n"
-	.string "He's already left, our WALLY.\p"
-	.string "I wonder where he could have\n"
-	.string "gotten by now?$"
+	.string "He's already shipped off, our WALLY.\p"
+	.string "I wonder which repo he could have\n"
+	.string "wandered into by now?$"
 
 PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing:
-	.string "I wonder how our WALLY is doing?$"
+	.string "I wonder how our WALLY's build\n"
+	.string "is holding up?$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
 	.string "{PLAYER}{KUN}! Please excuse us for\n"
@@ -119,9 +120,9 @@ PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
 
 PetalburgCity_WallysHouse_Text_WallyWasReallyHappy:
 	.string "WALLY was really happy when he told\n"
-	.string "us that he caught a POKéMON.\p"
+	.string "us he caught his first prototype.\p"
 	.string "It's been ages since I've seen him\n"
-	.string "smile like that.$"
+	.string "smile instead of reading stack traces.$"
 
 PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
 	.string "I want you to keep this a secret\n"
