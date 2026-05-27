@@ -363,15 +363,16 @@ Route103_Text_BrendanTimeToHeadBack:
 	.string "this as version 1.0.$"
 
 Route103_Text_DemoComplete:
-	.string "AI SLOP DEMO SLICE COMPLETE\p"
-	.string "You reached the end of the intended\n"
-	.string "15-minute proof-of-concept path.\p"
-	.string "The prototype has shown: custom\n"
+	.string "AI SLOP: RIVAL TEST PASSED\p"
+	.string "You cleared the early slice: custom\n"
 	.string "starters, cursed sprites, new text,\n"
 	.string "AI-named moves, wild overworld bugs,\n"
 	.string "and one rival balance test.\p"
-	.string "Everything past this point is still\n"
-	.string "plain old HOENN wearing a lab coat.$"
+	.string "The prototype now ships all the way\n"
+	.string "to RUSTBORO CITY. Head back through\n"
+	.string "OLDALE and keep going west.\p"
+	.string "Past RUSTBORO it's still plain old\n"
+	.string "HOENN wearing a lab coat.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My prototype is staggeringly tired.\p"

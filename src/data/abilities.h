@@ -95,8 +95,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_OBLIVIOUS] =
     {
-        .name = _("Oblivious"),
-        .description = COMPOUND_STRING("Prevents attraction."),
+        .name = _("Ignores Warns"),
+        .description = COMPOUND_STRING("Ignores charm and warnings."),
         .aiRating = 2,
         .breakable = TRUE,
     },
@@ -148,16 +148,16 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SHIELD_DUST] =
     {
-        .name = _("Shield Dust"),
-        .description = COMPOUND_STRING("Prevents added effects."),
+        .name = _("Try/Catch"),
+        .description = COMPOUND_STRING("Catches added effects."),
         .aiRating = 5,
         .breakable = TRUE,
     },
 
     [ABILITY_OWN_TEMPO] =
     {
-        .name = _("Own Tempo"),
-        .description = COMPOUND_STRING("Prevents confusion."),
+        .name = _("Single Thread"),
+        .description = COMPOUND_STRING("Never gets confused."),
         .aiRating = 3,
         .breakable = TRUE,
     },
@@ -211,15 +211,15 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_EFFECT_SPORE] =
     {
-        .name = _("Effect Spore"),
-        .description = COMPOUND_STRING("Leaves spores on contact."),
+        .name = _("Side Effects"),
+        .description = COMPOUND_STRING("Contact may have side effects."),
         .aiRating = 4,
     },
 
     [ABILITY_SYNCHRONIZE] =
     {
-        .name = _("Synchronize"),
-        .description = COMPOUND_STRING("Passes on status problems."),
+        .name = _("State Sync"),
+        .description = COMPOUND_STRING("Passes its status to the foe."),
         .aiRating = 4,
     },
 
@@ -255,15 +255,15 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SWIFT_SWIM] =
     {
-        .name = _("Swift Swim"),
-        .description = COMPOUND_STRING("Raises Speed in rain."),
+        .name = _("Async"),
+        .description = COMPOUND_STRING("Ups Speed in rain."),
         .aiRating = 6,
     },
 
     [ABILITY_CHLOROPHYLL] =
     {
-        .name = _("Chlorophyll"),
-        .description = COMPOUND_STRING("Raises Speed in sunshine."),
+        .name = _("Green Thread"),
+        .description = COMPOUND_STRING("Ups Speed in sun."),
         .aiRating = 6,
     },
 
@@ -277,8 +277,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_TRACE] =
     {
-        .name = _("Trace"),
-        .description = COMPOUND_STRING("Copies special ability."),
+        .name = _("Copy-Paste"),
+        .description = COMPOUND_STRING("Copies the foe's Ability."),
         .aiRating = 6,
         .cantBeCopied = TRUE,
         .cantBeTraced = TRUE, //B_UPDATED_ABILITY_DATA >= GEN_4
@@ -339,8 +339,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_RAIN_DISH] =
     {
-        .name = _("Rain Dish"),
-        .description = COMPOUND_STRING("Slight HP recovery in rain."),
+        .name = _("Cache Warm"),
+        .description = COMPOUND_STRING("Recovers HP in rain."),
         .aiRating = 3,
     },
 
@@ -368,8 +368,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_EARLY_BIRD] =
     {
-        .name = _("Early Bird"),
-        .description = COMPOUND_STRING("Awakens quickly from sleep."),
+        .name = _("Eager Load"),
+        .description = COMPOUND_STRING("Wakes from sleep fast."),
         .aiRating = 4,
     },
 
@@ -382,8 +382,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_RUN_AWAY] =
     {
-        .name = _("Run Away"),
-        .description = COMPOUND_STRING("Makes escaping easier."),
+        .name = _("Rage Quit"),
+        .description = COMPOUND_STRING("Makes rage-quitting easy."),
         .aiRating = 0,
     },
 
@@ -397,16 +397,16 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_HYPER_CUTTER] =
     {
-        .name = _("Hyper Cutter"),
-        .description = COMPOUND_STRING("Prevents Attack reduction."),
+        .name = _("Hard Fork"),
+        .description = COMPOUND_STRING("Attack can't be lowered."),
         .aiRating = 3,
         .breakable = TRUE,
     },
 
     [ABILITY_PICKUP] =
     {
-        .name = _("Pickup"),
-        .description = COMPOUND_STRING("May pick up items."),
+        .name = _("Web Scrape"),
+        .description = COMPOUND_STRING("May scrape up items."),
         .aiRating = 1,
     },
 
@@ -473,8 +473,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_GUTS] =
     {
-        .name = _("Guts"),
-        .description = COMPOUND_STRING("Ups Attack if suffering."),
+        .name = _("Crunch Mode"),
+        .description = COMPOUND_STRING("Ups Attack when statused."),
         .aiRating = 6,
     },
 
@@ -567,7 +567,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SHELL_ARMOR] =
     {
-        .name = _("Shell Armor"),
+        .name = _("Sandbox"),
         .description = COMPOUND_STRING("Blocks critical hits."),
         .aiRating = 2,
         .breakable = TRUE,
@@ -620,8 +620,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_GLUTTONY] =
     {
-        .name = _("Gluttony"),
-        .description = COMPOUND_STRING("Eats Berries early."),
+        .name = _("Memory Leak"),
+        .description = COMPOUND_STRING("Eats its Berry early."),
         .aiRating = 3,
     },
 
@@ -649,8 +649,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SIMPLE] =
     {
-        .name = _("Simple"),
-        .description = COMPOUND_STRING("Prone to wild stat changes."),
+        .name = _("Naive"),
+        .description = COMPOUND_STRING("Naively doubles stat changes."),
         .aiRating = 8,
         .breakable = TRUE,
     },
@@ -679,15 +679,15 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_POISON_HEAL] =
     {
-        .name = _("Poison Heal"),
-        .description = COMPOUND_STRING("Restores HP if poisoned."),
+        .name = _("Self-Heal"),
+        .description = COMPOUND_STRING("Heals HP while poisoned."),
         .aiRating = 8,
     },
 
     [ABILITY_ADAPTABILITY] =
     {
-        .name = _("Adaptability"),
-        .description = COMPOUND_STRING("Boosts same type attacks."),
+        .name = _("Overfit"),
+        .description = COMPOUND_STRING("Boosts same-type attacks."),
         .aiRating = 8,
     },
 
@@ -714,8 +714,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_QUICK_FEET] =
     {
-        .name = _("Quick Feet"),
-        .description = COMPOUND_STRING("Ups Speed if suffering."),
+        .name = _("Hot Path"),
+        .description = COMPOUND_STRING("Ups Speed when statused."),
         .aiRating = 5,
     },
 
@@ -843,8 +843,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SCRAPPY] =
     {
-        .name = _("Scrappy"),
-        .description = COMPOUND_STRING("Hits Ghost-type Pokémon."),
+        .name = _("Hacky"),
+        .description = COMPOUND_STRING("Can hit Ghost types."),
         .aiRating = 6,
     },
 
@@ -935,8 +935,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PICKPOCKET] =
     {
-        .name = _("Pickpocket"),
-        .description = COMPOUND_STRING("Steals the foe's held item."),
+        .name = _("Supply Chain"),
+        .description = COMPOUND_STRING("Steals an item on contact."),
         .aiRating = 3,
     },
 
@@ -1052,8 +1052,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_TELEPATHY] =
     {
-        .name = _("Telepathy"),
-        .description = COMPOUND_STRING("Can't be damaged by an ally."),
+        .name = _("Shared Mem"),
+        .description = COMPOUND_STRING("Dodges an ally's attacks."),
         .aiRating = 0,
         .breakable = TRUE,
     },
@@ -1166,8 +1166,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_RATTLED] =
     {
-        .name = _("Rattled"),
-        .description = COMPOUND_STRING("Raises Speed when scared."),
+        .name = _("Flaky"),
+        .description = COMPOUND_STRING("Ups Speed when rattled."),
         .aiRating = 3,
     },
 
