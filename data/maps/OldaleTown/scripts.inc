@@ -340,58 +340,62 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "I save before talking to anyone now.\p"
+	.string "Last time an NPC said “quick fix” and\n"
+	.string "my whole afternoon disappeared.$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
-	.string "Can I get you to come with me?$"
+	.string "I run growth at the POKéMON MART.\p"
+	.string "Can I onboard you into our potion\n"
+	.string "funnel real quick?$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
 	.string "This is a POKéMON MART.\n"
 	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "We sell goods, capture tools, and\n"
+	.string "confidence to people shipping too fast.\p"
+	.string "Here, take this promotional POTION.\n"
+	.string "Our KPI is “survived first battle.”$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "A POTION can be used anytime.\p"
+	.string "That means it is basically technical\n"
+	.string "debt in bottle form, but helpful.$"
 
 OldaleTown_Text_WaitDontComeInHere:
 	.string "Aaaaah! Wait!\n"
 	.string "Please don't come in here.\p"
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "I just discovered evidence of a rare\n"
+	.string "POKéMON, or maybe a duplicated asset!\p"
+	.string "I need to analyze the footprint pattern\n"
+	.string "for twenty more turns, okay?$"
 
 OldaleTown_Text_DiscoveredFootprints:
 	.string "I just discovered the footprints of\n"
 	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "They may also be my own footprints,\n"
+	.string "but I am not ready to conclude that.$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
-	.string "I finished sketching the footprints of\n"
-	.string "a rare POKéMON.\p"
-	.string "But it turns out they were only my\n"
-	.string "own footprints…$"
+	.string "I finished the footprint investigation.\p"
+	.string "My final report: they were my own\n"
+	.string "footprints, but with strong confidence.$"
 
 OldaleTown_Text_MayLetsGoBack:
 	.string "MAY: {PLAYER}{KUN}!\n"
 	.string "Over here!\l"
-	.string "Let's hurry home!$"
+	.string "Great fight data.\n"
+	.string "Let's hurry home before Dad calls\l"
+	.string "this demo production-ready!$"
 
 OldaleTown_Text_BrendanLetsGoBack:
 	.string "BRENDAN: I'm heading back to my dad's\n"
-	.string "LAB now.\l"
-	.string "{PLAYER}, you should hustle back, too.$"
+	.string "LAB now.\p"
+	.string "The test passed, which is exactly when\n"
+	.string "he gets dangerous.\p"
+	.string "{PLAYER}, hustle back, too.$"
 
 OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
-	.string "“Where things start off scarce.”$"
-
+	.string "“Where prototypes become promises.”$"

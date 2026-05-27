@@ -11,11 +11,18 @@ ROMs, generated `.gba` files, save files, or copyrighted game dumps.
 
 ## Current v0.1 Direction
 
-- Existing-sprite starter trio: Shroomish, Numel, and Corphish.
-- Early route identity pass for Route 101 and Route 102.
-- Rival and early trainer tuning around the new starter trio.
-- Dialogue rewrite pass for the opening bedroom/rival sequence.
-- No custom sprites, new music, or major map work for v0.1.
+- YouTube demo slice from the bedroom through the Route 103 rival fight.
+- Starter trio replaces Shroomish, Numel, and Corphish with Promptrot,
+  Tokenburn, and Slopjet.
+- Seven early species replacements cover Badvid, Bootdog, Bugfixme, Chatbot,
+  Dataduck, Seedbug, and Jpegull.
+- Early NPC dialogue establishes Birch's unsafe AI prototype lab, a vibe coder
+  NPC, Oldale growth-hacker onboarding, and rival balance-test framing.
+- Placeholder custom pixel sprites are generated for first-slice Pokemon and
+  visible overworld people. The reference concept sheet is in
+  [`docs/ai-slop/concept-sheet.png`](docs/ai-slop/concept-sheet.png).
+- No custom music, title screen overhaul, full dex, or full-map rebuild for
+  v0.1.
 
 ## Building
 
