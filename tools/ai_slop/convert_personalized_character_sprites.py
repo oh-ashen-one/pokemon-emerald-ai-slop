@@ -50,6 +50,7 @@ OVERWORLD_OUTPUTS = {
             "graphics/object_events/pics/people/brendan/walking.png",
             "graphics/object_events/pics/people/brendan/running.png",
         ],
+        "max_height": 25,
         "palette_paths": [
             "graphics/object_events/palettes/brendan.pal",
             "graphics/object_events/palettes/brendan_reflection.pal",
@@ -60,6 +61,7 @@ OVERWORLD_OUTPUTS = {
             "graphics/object_events/pics/people/may/walking.png",
             "graphics/object_events/pics/people/may/running.png",
         ],
+        "max_height": 25,
         "palette_paths": [
             "graphics/object_events/palettes/may.pal",
             "graphics/object_events/palettes/may_reflection.pal",
@@ -67,18 +69,22 @@ OVERWORLD_OUTPUTS = {
     },
     "prototype_lab_lead": {
         "paths": ["graphics/object_events/pics/people/prof_birch.png"],
+        "max_height": 27,
         "palette_paths": ["graphics/object_events/palettes/npc_3.pal"],
     },
     "mom": {
         "paths": ["graphics/object_events/pics/people/mom.png"],
+        "max_height": 27,
         "palette_paths": ["graphics/object_events/palettes/npc_4.pal"],
     },
     "nurse": {
         "paths": ["graphics/object_events/pics/people/nurse.png"],
+        "max_height": 27,
         "shared_palette": "npc_1_shared",
     },
     "mart_employee": {
         "paths": ["graphics/object_events/pics/people/mart_employee.png"],
+        "max_height": 27,
         "shared_palette": "npc_1_shared",
     },
 }
@@ -240,7 +246,7 @@ def quantize_to_palette(rgba, palette):
     return out
 
 
-def fit_pose(pose, size=(16, 32), max_height=29):
+def fit_pose(pose, size=(16, 32), max_height=27):
     canvas = Image.new("RGBA", size, (0, 0, 0, 0))
     sprite = pose.copy()
     sprite.thumbnail((size[0] - 1, max_height), Image.Resampling.LANCZOS)
@@ -248,29 +254,63 @@ def fit_pose(pose, size=(16, 32), max_height=29):
     return canvas
 
 
-def foot_shift(frame, direction):
+def foot_shift(frame, direction, foot_y=25, stride=1):
     shifted = frame.copy()
-    lower = frame.crop((0, 22, 16, 32))
-    shifted.paste(Image.new("RGBA", (16, 10), (0, 0, 0, 0)), (0, 22))
-    shifted.alpha_composite(ImageChops.offset(lower, direction, 0), (0, 22))
+    lower = frame.crop((0, foot_y, 16, 32))
+    shifted.paste(Image.new("RGBA", (16, 32 - foot_y), (0, 0, 0, 0)), (0, foot_y))
+
+    # Move only the feet/ankles, not the whole lower body. Shifting from the
+    # knees down made tall generated sprites tear apart in-game.
+    step = ImageChops.offset(lower, direction * stride, 0)
+    shifted.alpha_composite(step, (0, foot_y))
     return shifted
 
 
-def make_overworld_sheet(poses):
-    front = fit_pose(poses[0])
-    back = fit_pose(poses[1])
-    side = fit_pose(poses[2])
+def body_bob(frame, amount):
+    return ImageChops.offset(frame, 0, amount)
+
+
+def side_stride(frame, direction, foot_y=24):
+    shifted = frame.copy()
+    foot = frame.crop((0, foot_y, 16, 32))
+    shifted.paste(Image.new("RGBA", (16, 32 - foot_y), (0, 0, 0, 0)), (0, foot_y))
+    shifted.alpha_composite(ImageChops.offset(foot, direction, 0), (0, foot_y))
+    return shifted
+
+
+def make_overworld_sheet(poses, max_height=27, run=False):
+    front = fit_pose(poses[0], max_height=max_height)
+    back = fit_pose(poses[1], max_height=max_height)
+    side = fit_pose(poses[2], max_height=max_height)
     left = ImageOps.mirror(side)
+    stride = 1
+    foot_y = 26 if max_height <= 25 else 25
+
+    front_step_a = foot_shift(front, -1, foot_y=foot_y, stride=stride)
+    front_step_b = foot_shift(front, 1, foot_y=foot_y, stride=stride)
+    back_step_a = foot_shift(back, -1, foot_y=foot_y, stride=stride)
+    back_step_b = foot_shift(back, 1, foot_y=foot_y, stride=stride)
+    left_step = side_stride(left, -1, foot_y=foot_y - 1)
+    right_step = side_stride(side, 1, foot_y=foot_y - 1)
+
+    if run:
+        front_step_a = body_bob(front_step_a, 1)
+        front_step_b = body_bob(front_step_b, 1)
+        back_step_a = body_bob(back_step_a, 1)
+        back_step_b = body_bob(back_step_b, 1)
+        left_step = body_bob(left_step, 1)
+        right_step = body_bob(right_step, 1)
+
     frames = [
         front,
         back,
         left,
-        foot_shift(front, -1),
-        foot_shift(front, 1),
-        foot_shift(back, -1),
-        foot_shift(back, 1),
-        left,
-        side,
+        front_step_a,
+        front_step_b,
+        back_step_a,
+        back_step_b,
+        left_step,
+        right_step,
     ]
     sheet = Image.new("RGBA", (144, 32), (0, 0, 0, 0))
     for i, frame in enumerate(frames):
@@ -357,7 +397,21 @@ def convert_overworld_sprites():
         role: [crop_box(image, boxes[row][i], padding=8) for i in range(3)]
         for role, row in OVERWORLD_ROLES.items()
     }
-    role_sheets = {role: make_overworld_sheet(poses) for role, poses in role_poses.items()}
+    role_sheets = {
+        role: make_overworld_sheet(
+            poses,
+            max_height=OVERWORLD_OUTPUTS.get(role, {}).get("max_height", 27),
+        )
+        for role, poses in role_poses.items()
+    }
+    role_run_sheets = {
+        role: make_overworld_sheet(
+            poses,
+            max_height=OVERWORLD_OUTPUTS.get(role, {}).get("max_height", 27),
+            run=True,
+        )
+        for role, poses in role_poses.items()
+    }
 
     npc_1_palette = derive_palette(role_sheets["nurse"], (role_sheets["mart_employee"],))
     palettes = {
@@ -382,7 +436,7 @@ def convert_overworld_sprites():
         indexed = None
         for path in config["paths"]:
             if path.endswith("/running.png"):
-                indexed = save_sheet(ImageChops.offset(sheet, 0, 1), path, palette)
+                indexed = save_sheet(role_run_sheets[role], path, palette)
             else:
                 indexed = save_sheet(sheet, path, palette)
         previews.append((role, indexed.convert("RGBA")))
