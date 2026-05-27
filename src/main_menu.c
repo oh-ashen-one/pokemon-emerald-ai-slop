@@ -471,9 +471,12 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
     sSpriteAffineAnim_PlayerShrink
 };
 
+static const u8 sText_VibeCoder[] = _("VIBE");
+static const u8 sText_ActualCoder[] = _("CODE");
+
 static const struct MenuAction sMenuActions_Gender[] = {
-    {gText_Boy, {NULL}},
-    {gText_Girl, {NULL}}
+    {sText_VibeCoder, {NULL}},
+    {sText_ActualCoder, {NULL}}
 };
 
 static const u8 *const sMalePresetNames[] = {
