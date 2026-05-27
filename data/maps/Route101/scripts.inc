@@ -211,6 +211,30 @@ Route101_EventScript_Boy::
 	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
 	end
 
+Route101_EventScript_OverworldBadvid::
+	lock
+	faceplayer
+	msgbox Route101_Text_OverworldBadvid, MSGBOX_DEFAULT
+	closemessage
+	waitse
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ZIGZAGOON, 3
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route101_EventScript_RemoveOverworldPrototype
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route101_EventScript_RemoveOverworldPrototype
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route101_EventScript_RemoveOverworldPrototype
+	release
+	end
+
+Route101_EventScript_RemoveOverworldPrototype::
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
 Route101_EventScript_RouteSign::
 	msgbox Route101_Text_RouteSign, MSGBOX_SIGN
 	end
@@ -296,6 +320,12 @@ Route101_Text_WildPokemonInTallGrass:
 	.string "Recently they have been jumping out\n"
 	.string "with names like BUGFIXME and BADVID.\p"
 	.string "Everyone is pretending this is research.$"
+
+Route101_Text_OverworldBadvid:
+	.string "BADVID jitters in place.\p"
+	.string "It looks like someone generated a\n"
+	.string "video of a POKéMON, paused it,\l"
+	.string "then forgot which legs were real.$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"

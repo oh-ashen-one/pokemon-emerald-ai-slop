@@ -193,6 +193,30 @@ Route103_EventScript_Boy::
 	msgbox Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC
 	end
 
+Route103_EventScript_OverworldBootdog::
+	lock
+	faceplayer
+	msgbox Route103_Text_OverworldBootdog, MSGBOX_DEFAULT
+	closemessage
+	waitse
+	playmoncry SPECIES_POOCHYENA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_POOCHYENA, 4
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route103_EventScript_RemoveOverworldPrototype
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route103_EventScript_RemoveOverworldPrototype
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route103_EventScript_RemoveOverworldPrototype
+	release
+	end
+
+Route103_EventScript_RemoveOverworldPrototype::
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
 Route103_EventScript_Man::
 	msgbox Route103_Text_ShortcutToOldale, MSGBOX_NPC
 	end
@@ -296,6 +320,8 @@ Route103_Text_MayLetsBattle:
 	.string "Oh, hi, {PLAYER}{KUN}!\p"
 	.string "…Oh, I see, Dad gave you one\n"
 	.string "of the weird prototype starters.\p"
+	.string "You know this video probably killed\n"
+	.string "ten trees just to render one bug.\p"
 	.string "Since we're here, let's test if\n"
 	.string "this build falls over!$"
 
@@ -319,6 +345,8 @@ Route103_Text_BrendanLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
 	.string "…Oh, yeah, Dad gave you one of\n"
 	.string "the weird prototype starters.\p"
+	.string "You know this video probably killed\n"
+	.string "ten trees just to render one bug.\p"
 	.string "Since we're here, let's see if\n"
 	.string "the matchup table makes sense!$"
 
@@ -340,18 +368,27 @@ Route103_Text_DemoComplete:
 	.string "15-minute proof-of-concept path.\p"
 	.string "The prototype has shown: custom\n"
 	.string "starters, cursed sprites, new text,\n"
+	.string "AI-named moves, wild overworld bugs,\n"
 	.string "and one rival balance test.\p"
 	.string "Everything past this point is still\n"
 	.string "plain old HOENN wearing a lab coat.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
-	.string "My POKéMON is staggeringly tired…\n"
-	.string "I should have brought a POTION…$"
+	.string "My prototype is staggeringly tired.\p"
+	.string "I should have brought a POTION,\n"
+	.string "or at least a rollback plan.$"
+
+Route103_Text_OverworldBootdog:
+	.string "BOOTDOG wags with suspicious brand\n"
+	.string "confidence.\p"
+	.string "Its tag says: “legally distinct,\n"
+	.string "emotionally unstable.”$"
 
 Route103_Text_ShortcutToOldale:
 	.string "If you cross the sea from here,\n"
 	.string "it'll be a shortcut to OLDALE TOWN.\p"
-	.string "Fufufu, that's useful, isn't it?$"
+	.string "I filed that as pathfinding tech debt\n"
+	.string "and went to lunch.$"
 
 Route103_Text_RouteSign:
 	.string "ROUTE 103\n"

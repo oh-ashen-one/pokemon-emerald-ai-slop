@@ -71,53 +71,64 @@ Route102_Text_TianaPostBattle:
 
 Route103_Text_DaisyIntro:
 	.string "Did you feel the tug of our\n"
-	.string "soul-soothing fragrance?$"
+	.string "soul-soothing fragrance?\p"
+	.string "It is mostly PROMPTROT spores and\n"
+	.string "one terrified intern.$"
 
 Route103_Text_DaisyDefeated:
-	.string "You weren't led astray by our aroma…$"
+	.string "You weren't led astray by our aroma\n"
+	.string "or our product roadmap...$"
 
 Route103_Text_DaisyPostBattle:
-	.string "Aromatherapy is a form of mental\n"
-	.string "healing that works with fragrances.$"
+	.string "Aromatherapy is mental healing with\n"
+	.string "fragrance.\p"
+	.string "Prototype therapy is just a README\n"
+	.string "that says “known issues.”$"
 
 Route103_Text_AmyIntro:
 	.string "AMY: I'm AMY.\n"
-	.string "And this is my little sister LIV.\l"
-	.string "We battle together!$"
+	.string "And this is LIV.\p"
+	.string "We are pair programming a double\n"
+	.string "battle and refusing code review!$"
 
 Route103_Text_AmyDefeated:
-	.string "AMY: Uh-oh, we lost.$"
+	.string "AMY: Uh-oh, our branch conflicts.$"
 
 Route103_Text_AmyPostBattle:
-	.string "AMY: You have to think about all\n"
-	.string "kinds of things when you're battling\l"
-	.string "against two TRAINERS.$"
+	.string "AMY: Double battles are hard.\p"
+	.string "You need strategy, timing, and not\n"
+	.string "asking AI to name both variables x.$"
 
 Route103_Text_AmyNotEnoughPokemon:
-	.string "AMY: Uh-oh, you have only one\n"
-	.string "POKéMON with you.\l"
-	.string "You can't battle us like that.$"
+	.string "AMY: Uh-oh, you only have one\n"
+	.string "POKéMON.\p"
+	.string "We need two targets for our sloppy\n"
+	.string "integration test.$"
 
 Route103_Text_LivIntro:
 	.string "LIV: We battle together as one\n"
-	.string "team.$"
+	.string "team, like two agents editing the\n"
+	.string "same file at once.$"
 
 Route103_Text_LivDefeated:
-	.string "LIV: Oh, we lost, big sister…$"
+	.string "LIV: Oh, we lost, big sister...\n"
+	.string "Should we blame the prompt?$"
 
 Route103_Text_LivPostBattle:
 	.string "LIV: We work perfectly together,\n"
-	.string "me and my big sister…\p"
-	.string "But we still lost…$"
+	.string "me and my big sister.\p"
+	.string "The build disagrees, loudly.$"
 
 Route103_Text_AmyLivRegister:
-	.string "LIV: Really, we're a lot better…\n"
-	.string "It's true! We'll show you next time!$"
+	.string "LIV: Really, we're better than this.\p"
+	.string "Next time we are shipping with tests.\n"
+	.string "Maybe.$"
 
 Route103_Text_LivNotEnoughPokemon:
 	.string "LIV: If you want to battle us,\n"
-	.string "you have to have two POKéMON!\l"
-	.string "It's not fair if you don't!$"
+	.string "you need two POKéMON.\p"
+	.string "A one-mon double battle is just\n"
+	.string "a meeting with action items.$"
 
 Route103_Text_AmyRematchIntro:
 	.string "AMY: I'm AMY.\n"
@@ -157,29 +168,31 @@ Route103_Text_LivRematchNotEnoughPokemon:
 	.string "It's not fair if you don't!$"
 
 Route103_Text_AndrewIntro:
-	.string "Gah! My fishing line's all snarled up!\n"
-	.string "I'm getting frustrated and mean!\l"
-	.string "That's it! Battle me!$"
+	.string "Gah! My fishing line is all snarled!\p"
+	.string "It looks like spaghetti code with\n"
+	.string "scales. Battle me!$"
 
 Route103_Text_AndrewDefeated:
 	.string "Gah! Lost it!\n"
-	.string "I'm even more annoyed now!$"
+	.string "Even my Magikarp replacement has bugs!$"
 
 Route103_Text_AndrewPostBattle:
-	.string "Gah, I'm still boiling mad…\n"
-	.string "Grrrrr…$"
+	.string "Gah, I'm still boiling mad.\p"
+	.string "Somewhere an AI is suggesting I fix\n"
+	.string "this by reinstalling everything.$"
 
 Route103_Text_MiguelIntro:
-	.string "My POKéMON is delightfully adorable!\n"
-	.string "Don't be shy--I'll show you!$"
+	.string "My POKéMON is delightfully adorable!\p"
+	.string "It was trained entirely on screenshots\n"
+	.string "of better mascots!$"
 
 Route103_Text_MiguelDefeated:
 	.string "Oh, my gosh!\n"
-	.string "My darling POKéMON!$"
+	.string "My darling brand liability!$"
 
 Route103_Text_MiguelPostBattle:
 	.string "My delightful POKéMON looks darling\n"
-	.string "even when it's fainted!$"
+	.string "even when the legal team is sweating.$"
 
 Route103_Text_MiguelRegister:
 	.string "I'll get you to come out and look in\n"
@@ -198,24 +211,27 @@ Route103_Text_MiguelRematchPostBattle:
 	.string "the more adorable my POKéMON becomes.$"
 
 Route103_Text_PeteIntro:
-	.string "This sort of distance…\n"
-	.string "You should just swim it!$"
+	.string "This sort of distance...\n"
+	.string "You should just swim it!\p"
+	.string "Unless the water physics were vibe\n"
+	.string "coded, which they were.$"
 
 Route103_Text_PeteDefeated:
-	.string "Oh, that's good going!$"
+	.string "Oh, that's good going!\n"
+	.string "The swim build did not crash!$"
 
 Route103_Text_PetePostBattle:
-	.string "Oh, I understand where you're coming\n"
-	.string "from now.\p"
 	.string "If I had a POKéMON that trusty,\n"
-	.string "I'd want to SURF on it, too!$"
+	.string "I'd SURF on it too.\p"
+	.string "Mine keeps generating extra elbows.$"
 
 Route103_Text_IsabelleIntro:
 	.string "Watch where you're going!\n"
-	.string "We're going to crash!$"
+	.string "The collision boxes are emotional!$"
 
 Route103_Text_IsabelleDefeated:
-	.string "Groan…$"
+	.string "Groan...\n"
+	.string "That was not in the acceptance test.$"
 
 Route103_Text_IsabellePostBattle:
 	.string "I'm a poor swimmer so I was practicing…\n"
