@@ -19,8 +19,13 @@ EventScript_TryDoNormalTrainerBattle::
 	special SetTrainerFacingDirection
 	goto EventScript_ShowTrainerIntroMsg
 
+@ AI Slop: talking to an already-defeated trainer re-runs the battle instead of
+@ just showing post-battle text. Opt-in rematch (no on-sight trapping), and the
+@ trainer's flag stays set so story/badge progression is untouched.
 EventScript_NoNormalTrainerBattle::
-	gotopostbattlescript
+	special PlayTrainerEncounterMusic
+	special SetTrainerFacingDirection
+	goto EventScript_ShowTrainerIntroMsg
 
 EventScript_TryDoDoubleTrainerBattle::
 	lock
@@ -41,8 +46,13 @@ EventScript_NotEnoughMonsForDoubleBattle::
 	release
 	end
 
+@ AI Slop: same opt-in rematch for double-battle trainers.
 EventScript_NoDoubleTrainerBattle::
-	gotopostbattlescript
+	special HasEnoughMonsForDoubleBattle
+	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, EventScript_NotEnoughMonsForDoubleBattle
+	special PlayTrainerEncounterMusic
+	special SetTrainerFacingDirection
+	goto EventScript_ShowTrainerIntroMsg
 
 EventScript_DoNoIntroTrainerBattle::
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
