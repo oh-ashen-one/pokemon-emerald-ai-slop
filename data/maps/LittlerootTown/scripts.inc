@@ -922,13 +922,15 @@ LittlerootTown_Text_WaitPlayer:
 LittlerootTown_Text_WearTheseRunningShoes:
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
-	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from PROF. BIRCH. How nice!\p"
+	.string "Oh! What an adorable prototype!\n"
+	.string "BIRCH let you keep one? How brave!\p"
 	.string "You're your father's child, all right.\n"
-	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "You ship things before they're tested!\p"
+	.string "Here, honey! If you're going out to\n"
+	.string "field-test that thing, wear these\l"
+	.string "RUNNING SHOES.\p"
+	.string "They'll help you run from anything that\n"
+	.string "renders wrong!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "{PLAYER} switched shoes with the\n"
@@ -936,21 +938,21 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes:
 
 LittlerootTown_Text_ExplainRunningShoes:
 	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
+	.string "a README. I actually read it.\p"
 	.string "“Press the B Button while wearing these\n"
 	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "“Hold B to outrun any prototype that\n"
+	.string "shipped before it was finished!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
-	.string "POKéMON now…\l"
+	.string "To think that you're maintaining your\n"
+	.string "very own prototype now…\l"
 	.string "Your father will be overjoyed.\p"
 	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "If it crashes, you can always come home.\p"
+	.string "Go on, go ship it, honey!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "I'm a vibe coder.\p"
@@ -1012,11 +1014,11 @@ LittlerootTown_Text_ProfBirchsHouse:
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
-	.string "That was good work out there!\p"
-	.string "I knew there was something special\n"
-	.string "about you when I first saw you,\l"
-	.string "but I never expected this.\p"
+	.string "That prototype held up in production!\p"
+	.string "I flagged you as a promising QA risk\n"
+	.string "the moment I saw you, but I never\l"
+	.string "expected zero crashes.\p"
 	.string "Oh, yes. Do you still have the POKéDEX\n"
 	.string "I gave you?\p"
-	.string "I have something to show you.\n"
-	.string "Let's go to my LAB.$"
+	.string "I pushed an update to the LAB.\n"
+	.string "Let's go take a look.$"

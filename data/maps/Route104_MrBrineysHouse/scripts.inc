@@ -95,63 +95,63 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
-	.string "MR. BRINEY: Hold on, lass!\n"
-	.string "Wait up, PEEKO!$"
+	.string "MR. BRINEY: Hold on there!\n"
+	.string "Don't restart yet, PEEKO!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "Hm? You're {PLAYER}{KUN}!\n"
-	.string "You saved my darling PEEKO!\l"
-	.string "We owe so much to you!\p"
+	.string "You kept my darling PEEKO online!\l"
+	.string "We owe you serious uptime!\p"
 	.string "What's that?\n"
-	.string "You want to sail with me?\p"
+	.string "You want me to run an ops route?\p"
 	.string "Hmhm…\p"
-	.string "You have a LETTER bound for DEWFORD\n"
-	.string "and a package for SLATEPORT, then?\p"
-	.string "Quite the busy life you must lead!\p"
-	.string "But, certainly, what you're asking is\n"
-	.string "no problem at all.\p"
-	.string "You've come to the right man!\n"
-	.string "We'll set sail for DEWFORD.$"
+	.string "A LETTER bound for DEWFORD and a\n"
+	.string "package for SLATEPORT, then?\p"
+	.string "Busy little pipeline you've got!\p"
+	.string "But sure, what you're asking is no\n"
+	.string "problem at all--low risk.\p"
+	.string "You've come to the right greybeard!\n"
+	.string "We'll deploy to DEWFORD.$"
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
 	.string "MR. BRINEY: DEWFORD it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "Spinning up the boat!\n"
+	.string "PEEKO, we're shipping, my darling!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
 	.string "MR. BRINEY: Is that so?\n"
-	.string "Your deliveries can wait?\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "Deliveries can stay in the queue?\p"
+	.string "You just ping me whenever you want\n"
+	.string "to kick off the deploy!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
+	.string "I already read your tickets!\p"
 	.string "You're to deliver a LETTER to DEWFORD\n"
 	.string "and a package to SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all--I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "What you need from me is no problem\n"
+	.string "at all--I've shipped harder migrations.\p"
+	.string "First, we'll deploy to DEWFORD.$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
+	.string "I already read your tickets!\p"
 	.string "You're to deliver a package to\n"
 	.string "CAPT. STERN in SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
+	.string "What you need from me is no problem\n"
 	.string "at all--I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "First, we'll deploy to DEWFORD.$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "For you, I'll spin up the boat anytime!\p"
+	.string "Now, my friend, what's the target env?$"
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
 	.string "MR. BRINEY: Is that so?\n"
-	.string "Well, PEEKO owes her life to you.\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "Well, PEEKO owes her uptime to you.\p"
+	.string "You just ping me whenever you want\n"
+	.string "to kick off the deploy!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
 	.string "PEEKO: Pii piihyoro!$"

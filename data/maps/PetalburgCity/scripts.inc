@@ -699,48 +699,52 @@ PetalburgCity_EventScript_GymBoy::
 
 PetalburgCity_Text_WhereIsWally:
 	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "His first prompt ships today and he\n"
+	.string "wandered off to go panic somewhere…$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
 	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "A junior dev TRAINER?\p"
+	.string "Do you know what TRAINERS do first\n"
+	.string "when they clone a new town?\p"
+	.string "They check what kind of GYM ships\n"
+	.string "in the build.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "See? This is PETALBURG CITY's GYM.\n"
+	.string "The eng manager runs it.$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "This is the GYM's sign. Read it\n"
+	.string "whenever you need to find a GYM.\p"
+	.string "It's basically the README, but\n"
+	.string "outdoors and slightly more accurate.$"
 
 PetalburgCity_Text_WaterReflection:
 	.string "My face is reflected in the water.\p"
 	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
+	.string "Or the thousand-yard stare of someone\n"
+	.string "who pushed straight to main…\p"
 	.string "What do you see reflected in your face?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
+	.string "Let's say you have six prototypes.\n"
 	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "It's auto-committed to a STORAGE BOX,\n"
+	.string "an unreviewed branch nobody opens.$"
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "ENG MANAGER: NORMAN\l"
+	.string "“In pursuit of merge access!”$"
 
 PetalburgCity_Text_CitySign:
 	.string "PETALBURG CITY\n"
-	.string "“Where people mingle with nature.”$"
+	.string "“Where humans pair with slop.”$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "WALLY'S HOUSE$"
+	.string "WALLY'S HOUSE\n"
+	.string "“Junior dev. Be encouraging.”$"
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"

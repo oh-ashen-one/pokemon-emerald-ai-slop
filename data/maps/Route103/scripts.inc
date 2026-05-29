@@ -145,6 +145,8 @@ Route103_EventScript_RivalEnd::
 	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 	savebgm MUS_DUMMY
 	fadedefaultbgm
+	delay 30
+	msgbox Route103_Text_DemoComplete, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -359,6 +361,18 @@ Route103_Text_BrendanTimeToHeadBack:
 	.string "even though it is clearly experimental.\p"
 	.string "We should head back before he ships\n"
 	.string "this as version 1.0.$"
+
+Route103_Text_DemoComplete:
+	.string "AI SLOP: RIVAL TEST PASSED\p"
+	.string "You cleared the early slice: custom\n"
+	.string "starters, cursed sprites, new text,\n"
+	.string "AI-named moves, wild overworld bugs,\n"
+	.string "and one rival balance test.\p"
+	.string "The prototype now ships all the way\n"
+	.string "to RUSTBORO CITY. Head back through\n"
+	.string "OLDALE and keep going west.\p"
+	.string "Past RUSTBORO it's still plain old\n"
+	.string "HOENN wearing a lab coat.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My prototype is staggeringly tired.\p"

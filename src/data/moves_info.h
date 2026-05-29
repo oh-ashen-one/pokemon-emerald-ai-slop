@@ -372,7 +372,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_SCRATCH] =
     {
-        .name = COMPOUND_STRING("Scratch"),
+        .name = COMPOUND_STRING("Quick Edit"),
         .description = COMPOUND_STRING(
             "Scratches the foe with\n"
             "sharp claws."),
@@ -1486,7 +1486,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EMBER] =
     {
-        .name = COMPOUND_STRING("Ember"),
+        .name = COMPOUND_STRING("Flame War"),
         .description = COMPOUND_STRING(
             "A weak fire attack that may\n"
             "inflict a burn."),
@@ -2007,7 +2007,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_MEGA_DRAIN] =
     {
-        .name = COMPOUND_STRING("Mega Drain"),
+        .name = COMPOUND_STRING("Bulk Scrape"),
         .description = sMegaDrainDescription,
         .effect = EFFECT_ABSORB,
         .power = 40,
@@ -2030,7 +2030,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_LEECH_SEED] =
     {
-        .name = COMPOUND_STRING("Leech Seed"),
+        .name = COMPOUND_STRING("Tech Debt"),
         .description = COMPOUND_STRING(
             "Plants a seed on the foe to\n"
             "steal HP on every turn."),
@@ -2054,7 +2054,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_GROWTH] =
     {
-        .name = COMPOUND_STRING("Growth"),
+        .name = COMPOUND_STRING("Scale Up"),
         .description = COMPOUND_STRING(
         #if B_GROWTH_STAT_RAISE >= GEN_5
             "Forces the body to grow,\n"
@@ -2134,7 +2134,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_POISON_POWDER] =
     {
-        .name = COMPOUND_STRING("Poison Powder"),
+        .name = COMPOUND_STRING("Poison Pill"),
         .description = COMPOUND_STRING(
             "Scatters a toxic powder\n"
             "that may poison the foe."),
@@ -2160,7 +2160,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_STUN_SPORE] =
     {
-        .name = COMPOUND_STRING("Stun Spore"),
+        .name = COMPOUND_STRING("Deadlock"),
         .description = COMPOUND_STRING(
             "Scatters a powder that may\n"
             "paralyze the foe."),
@@ -2186,7 +2186,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_SLEEP_POWDER] =
     {
-        .name = COMPOUND_STRING("Sleep Powder"),
+        .name = COMPOUND_STRING("Sleep Mode"),
         .description = COMPOUND_STRING(
             "Scatters a powder that may\n"
             "cause the foe to sleep."),
@@ -2956,7 +2956,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_SMOKESCREEN] =
     {
-        .name = COMPOUND_STRING("Smokescreen"),
+        .name = COMPOUND_STRING("Obfuscate"),
         .description = COMPOUND_STRING(
             "Lowers the foe's accuracy\n"
             "using smoke, ink, etc."),
@@ -3030,7 +3030,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DEFENSE_CURL] =
     {
-        .name = COMPOUND_STRING("Defense Curl"),
+        .name = COMPOUND_STRING("Refactor"),
         .description = COMPOUND_STRING(
             "Curls up to conceal weak\n"
             "spots and raise Defense."),
@@ -3187,7 +3187,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_BIDE] =
     {
-        .name = COMPOUND_STRING("Bide"),
+        .name = COMPOUND_STRING("Backlog"),
         .description = COMPOUND_STRING(
             "Endures attack for 2\n"
             "turns to retaliate double."),
@@ -5250,7 +5250,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_FORESIGHT] =
     {
-        .name = COMPOUND_STRING("Foresight"),
+        .name = COMPOUND_STRING("Type Check"),
         .description = COMPOUND_STRING(
             "Negates the foe's efforts\n"
             "to heighten evasiveness."),

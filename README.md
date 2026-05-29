@@ -11,19 +11,26 @@ ROMs, generated `.gba` files, save files, or copyrighted game dumps.
 
 ## Current v0.1 Direction
 
-- YouTube demo slice from the bedroom through the Route 103 rival fight, with an
-  explicit in-game end beat after that fight.
+- YouTube demo slice from the bedroom all the way to RUSTBORO CITY. The player
+  arrives at Rustboro; Rustboro itself and anything past it are out of scope.
 - Starter trio replaces Shroomish, Numel, and Corphish with Promptrot,
-  Tokenburn, and Slopjet.
-- Seven early species replacements cover Badvid, Bootdog, Bugfixme, Chatbot,
-  Dataduck, Seedbug, and Jpegull.
-- Early NPC dialogue establishes Birch's unsafe AI prototype lab, a vibe coder
-  NPC, Oldale growth-hacker onboarding, and rival balance-test framing.
+  Tokenburn, and Slopjet, each with an AI-themed signature move (Prompt Rot,
+  Token Burn, Slop Jet) learned at level 1.
+- Ten early species replacements cover Promptrot, Tokenburn, Slopjet, Badvid,
+  Bootdog, Bugfixme, Chatbot, Dataduck, Seedbug, and Jpegull.
+- Every talkable NPC, sign, and trainer from the start through Petalburg Woods
+  has custom AI Slop dialogue (Birch's unsafe prototype lab, vibe coders,
+  growth-hacker onboarding, rival balance tests, Team Aqua "blocking the
+  deploy", and so on).
+- Trainer classes, items, abilities, and common early moves are reskinned in the
+  AI Slop voice (e.g. Bug Catcher -> Bug Reporter, Potion -> Hotfix, Run Away ->
+  Rage Quit, Tackle -> Vibe Check). Nurse and Mart text reskinned too.
+- A few existing music tracks are reused for vibe (Petalburg Woods, Oldale,
+  Route 102). No new audio is added.
 - GPT-generated source art and converted custom pixel sprites cover the
   first-slice Pokemon and visible overworld people. Source assets live under
   [`docs/ai-slop/gpt-generated`](docs/ai-slop/gpt-generated).
-- No custom music, title screen overhaul, full dex, or full-map rebuild for
-  v0.1.
+- No full dex or full-map rebuild for v0.1.
 
 ## Demo Boundary
 
@@ -36,10 +43,13 @@ recordable path is:
 4. First battle with Badvid.
 5. Oldale onboarding and early NPC jokes.
 6. Route 103 rival balance-test battle.
-7. In-game demo-complete message.
+7. Back through Route 102 to Petalburg City (gym intro + Wally tutorial).
+8. Route 104, Mr. Briney, and the flower shop.
+9. Petalburg Woods and the Team Aqua run-in.
+10. Arrival at RUSTBORO CITY.
 
-Anything past the Route 103 rival fight should be treated as out of scope unless
-it directly improves footage for that first 15 minutes.
+Rustboro City interiors/gym and anything past Rustboro should be treated as out
+of scope unless it directly improves footage for the demo path above.
 
 ## Building
 

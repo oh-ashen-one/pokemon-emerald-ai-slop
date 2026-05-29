@@ -1,10 +1,10 @@
 gText_HowMayIServeYou::
-	.string "Welcome!\p"
-	.string "How may I serve you?$"
+	.string "Welcome to the funnel!\p"
+	.string "What are you shipping today?$"
 
 gText_PleaseComeAgain::
-	.string "Please come again!$"
+	.string "Thanks! Ship safely!$"
 
 gText_PlayerWhatCanIDoForYou::
-	.string "{PLAYER}{STRING 5}, welcome!\p"
-	.string "What can I do for you?$"
+	.string "{PLAYER}{STRING 5}, welcome back!\p"
+	.string "What can I provision for you?$"

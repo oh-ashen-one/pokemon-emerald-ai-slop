@@ -997,63 +997,65 @@ Route104_EventScript_Darian::
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"
 	.string "MR. BRINEY lives.\p"
-	.string "He was once a mighty sailor who never\n"
-	.string "feared the sea, however stormy.$"
+	.string "He ran production for thirty years\n"
+	.string "and never once feared an outage,\l"
+	.string "however bad the on-call.$"
 
 Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "The sea, huh?\p"
-	.string "I wonder what it's like at the bottom\n"
-	.string "of the sea?$"
+	.string "I wonder what's at the bottom of the\n"
+	.string "backlog?$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
-	.string "It will be easier to catch if it's been\n"
-	.string "poisoned, burned, or lulled to sleep.$"
+	.string "knock the prototype down first.\p"
+	.string "It onboards way easier once it's been\n"
+	.string "poisoned, burned, or put to sleep.$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
-	.string "You're a thief if you try to steal\n"
-	.string "someone else's POKéMON.\p"
-	.string "You should throw POKé BALLS only at\n"
-	.string "wild POKéMON.$"
+	.string "Catching someone else's mon is just\n"
+	.string "forking their repo without a license.\p"
+	.string "Only throw POKé BALLS at wild\n"
+	.string "prototypes, please.$"
 
 Route104_Text_ImNotATrainer:
-	.string "Oh, no, I'm not a TRAINER.\p"
-	.string "But that's right, if TRAINERS lock eyes,\n"
-	.string "it's a challenge to battle.\p"
-	.string "If you don't want to battle, stay out\n"
-	.string "of their sight.$"
+	.string "Oh, no, I'm not a balance tester.\p"
+	.string "But yeah, if two of them lock eyes,\n"
+	.string "that's an auto-scheduled matchup.\p"
+	.string "Don't want a battle? Stay out of\n"
+	.string "their line of sight.$"
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
-	.string "I like filling my mouth with seeds,\n"
-	.string "then spitting them out fast!\p"
-	.string "You can have this, so you try it out!\p"
-	.string "Use it on a POKéMON, and it will learn\n"
-	.string "a move for firing seeds rapidly.$"
+	.string "I like queuing up a ton of seeds,\n"
+	.string "then firing them off as fast as I can!\p"
+	.string "You can have this, so try shipping it!\p"
+	.string "Use it on a mon, and it learns a move\n"
+	.string "that spams seeds at full throughput.$"
 
 Route104_Text_TMsAreOneTimeUse:
 	.string "A word of advice!\p"
-	.string "A TM, TECHNICAL MACHINE, is good only\n"
-	.string "for one-time use.\p"
-	.string "Once you use it, it's gone.\n"
-	.string "Think twice before using it!$"
+	.string "A TM is single-use, no rollback,\n"
+	.string "no undo, no second commit.\p"
+	.string "Once you apply it, it's gone.\n"
+	.string "Think twice before merging!$"
 
 Route104_Text_DontNeedThisTakeIt:
-	.string "This FLOWER SHOP started selling\n"
+	.string "That FLOWER SHOP started shipping\n"
 	.string "saplings recently.\p"
-	.string "It made me so happy, I went overboard\n"
-	.string "shopping.\p"
+	.string "I got so hyped I overbought the whole\n"
+	.string "dependency tree.\p"
 	.string "I don't need this WHITE HERB anymore.\n"
-	.string "Would you take it, please?$"
+	.string "Would you take it off my hands?$"
 
 Route104_Text_FlowerShopSellingSaplings:
-	.string "This FLOWER SHOP started selling\n"
+	.string "That FLOWER SHOP started shipping\n"
 	.string "saplings recently.\p"
-	.string "It made me so happy, I went overboard\n"
-	.string "shopping. Where should I put them?$"
+	.string "I overbought the whole dependency\n"
+	.string "tree. Where do I even install these?$"
 
 Route104_Text_MrBrineysCottage:
-	.string "MR. BRINEY'S COTTAGE$"
+	.string "MR. BRINEY'S COTTAGE\n"
+	.string "“Thirty years of uptime, retired.”$"
 
 Route104_Text_RouteSignPetalburg:
 	.string "ROUTE 1O4\n"
@@ -1064,25 +1066,26 @@ Route104_Text_RouteSignRustboro:
 	.string "{UP_ARROW} RUSTBORO CITY$"
 
 Route104_Text_PrettyPetalFlowShop:
-	.string "PRETTY PETAL FLOWER SHOP$"
+	.string "PRETTY PETAL FLOWER SHOP\n"
+	.string "“Dependencies, grown to order.”$"
 
 Route104_Text_TrainerTipsDoubleBattles:
 	.string "TRAINER TIPS\p"
-	.string "In the HOENN region there are pairs\n"
-	.string "of TRAINERS who challenge others\l"
-	.string "for 2-on-2 POKéMON battles called\l"
+	.string "In HOENN there are pairs of balance\n"
+	.string "testers who pair-program against you\l"
+	.string "in 2-on-2 matchups called\l"
 	.string "DOUBLE BATTLES.\p"
-	.string "In a DOUBLE BATTLE, the TRAINER must\n"
-	.string "send out two POKéMON, the one at the\l"
-	.string "left of the list and the top one.\l"
-	.string "Watch how POKéMON are lined up.$"
+	.string "In a DOUBLE BATTLE you deploy two\n"
+	.string "mons at once: the top one and the\l"
+	.string "one on the left of your party list.\l"
+	.string "Mind how your party is ordered.$"
 
 Route104_Text_MayWeShouldRegister:
 	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "DEVON upgraded your POKéNAV with\n"
-	.string "the MATCH CALL system, huh?\p"
+	.string "DEVON pushed the MATCH CALL update\n"
+	.string "to your POKéNAV, huh?\p"
 	.string "We should register each other so we\n"
-	.string "can get in contact anytime.$"
+	.string "can sync on test runs anytime.$"
 
 Route104_Text_RegisteredMay:
 	.string "{PLAYER} registered MAY\n"
@@ -1090,79 +1093,79 @@ Route104_Text_RegisteredMay:
 
 Route104_Text_MayHowsYourPokedex:
 	.string "MAY: Oh, by the way, {PLAYER}{KUN},\n"
-	.string "how's your POKéDEX coming along?$"
+	.string "how's your POKéDEX coverage looking?$"
 
 Route104_Text_MayMinesDecentLetsBattle:
-	.string "Mine's looking pretty decent.\n"
+	.string "Mine's looking pretty production-ready.\n"
 	.string "So…\l"
-	.string "How about a little battle?$"
+	.string "How about a quick balance test?$"
 
 Route104_Text_MayHaventRaisedPokemon:
-	.string "MAY: Oh, what's the matter?\p"
-	.string "Haven't you caught or raised your\n"
-	.string "POKéMON very much?\p"
-	.string "That's not very good for a TRAINER!$"
+	.string "MAY: Oh, what's wrong?\p"
+	.string "Haven't logged many hours catching\n"
+	.string "or leveling your prototypes?\p"
+	.string "That's a thin test suite, you know!$"
 
 Route104_Text_MayLetsBattle:
 	.string "MAY: So, what do you think?\n"
-	.string "How about a little battle here?$"
+	.string "Quick balance test, right here?$"
 
 Route104_Text_MayIntro:
-	.string "MAY: You just became a TRAINER,\n"
-	.string "{PLAYER}{KUN}. I'm not going to lose!$"
+	.string "MAY: You just shipped your first\n"
+	.string "build, {PLAYER}{KUN}. I'm not regressing!$"
 
 Route104_Text_MayDefeat:
 	.string "Yikes!\n"
-	.string "You're better than I expected!$"
+	.string "Better matchup data than I expected!$"
 
 Route104_Text_MayPostBattle:
-	.string "MAY: I can tell you've gotten pretty\n"
-	.string "good with the way you handle POKéMON.\p"
-	.string "But instead of only making them\n"
-	.string "battle, you should be like MR. BRINEY.\p"
-	.string "It's important to become friends with\n"
-	.string "POKéMON, too.$"
+	.string "MAY: I can tell your handling has\n"
+	.string "gotten pretty solid in QA.\p"
+	.string "But don't just stress-test them all\n"
+	.string "day. You should be more like MR. BRINEY.\p"
+	.string "Long-term ownership matters too, not\n"
+	.string "just throwing prototypes at prod.$"
 
 Route104_Text_BrendanWeShouldRegister:
 	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
-	.string "Cool, you had DEVON install the MATCH\n"
-	.string "CALL system on your POKéNAV!\p"
-	.string "Let's register each other in our\n"
-	.string "POKéNAVS so we can keep in touch.$"
+	.string "Nice, you had DEVON deploy the MATCH\n"
+	.string "CALL system to your POKéNAV!\p"
+	.string "Let's register each other so we can\n"
+	.string "keep our test logs in sync.$"
 
 Route104_Text_RegisteredBrendan:
 	.string "{PLAYER} registered BRENDAN\n"
 	.string "in the POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
-	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
-	.string "Have you filled in any pages yet?$"
+	.string "BRENDAN: {PLAYER}, how's the POKéDEX?\n"
+	.string "Logged any coverage yet?$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:
-	.string "Me, I'm doing great!\p"
-	.string "Want to check out how good I am with\n"
-	.string "a battle?$"
+	.string "Me, my numbers are great!\p"
+	.string "Want to see how my matchup chart\n"
+	.string "holds up?$"
 
 Route104_Text_BrendanNoConfidence:
-	.string "BRENDAN: What's the matter? Don't have\n"
-	.string "any confidence in your POKéMON?$"
+	.string "BRENDAN: What's wrong? No confidence\n"
+	.string "in your build's stability?$"
 
 Route104_Text_BrendanLetsBattle:
 	.string "BRENDAN: What's up?\n"
-	.string "Want to have a battle with me?$"
+	.string "Run a balance test against me?$"
 
 Route104_Text_BrendanIntro:
-	.string "BRENDAN: I know you just became\n"
-	.string "a TRAINER, but I won't go easy!$"
+	.string "BRENDAN: I know you just shipped your\n"
+	.string "first build, but I won't go easy!$"
 
 Route104_Text_BrendanDefeat:
 	.string "Hmm…\n"
-	.string "You're pretty good.$"
+	.string "Your numbers are pretty good.$"
 
 Route104_Text_BrendanPostBattle:
-	.string "BRENDAN: You've gotten pretty decent\n"
-	.string "at handling POKéMON.\p"
-	.string "But, you know, you shouldn't just be\n"
-	.string "making POKéMON battle.\p"
-	.string "Like MR. BRINEY, it's important to\n"
-	.string "become friends with your POKéMON.$"
+	.string "BRENDAN: Your handling's gotten pretty\n"
+	.string "decent in QA.\p"
+	.string "But, you know, don't just throw your\n"
+	.string "prototypes into battle all day.\p"
+	.string "Like MR. BRINEY says, you've got to\n"
+	.string "actually maintain what you run.$"
