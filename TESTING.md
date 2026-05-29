@@ -13,7 +13,7 @@ newlib and will fail with "stdint.h: No such file or directory"):
 
 ```sh
 cd ~/pokemon-emerald-ai-slop
-make TOOLCHAIN="/Users/darkeatermidir/.cache/pokemon-rom-hack-toolchains/arm-gnu-toolchain-14.3.rel1-darwin-arm64-arm-none-eabi" -j$(sysctl -n hw.ncpu)
+make TOOLCHAIN="$HOME/.cache/pokemon-rom-hack-toolchains/arm-gnu-toolchain-14.3.rel1-darwin-arm64-arm-none-eabi" -j$(sysctl -n hw.ncpu)
 
 # run it
 /opt/homebrew/bin/mgba ~/pokemon-emerald-ai-slop/pokeemerald.gba
