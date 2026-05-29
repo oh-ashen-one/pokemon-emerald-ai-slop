@@ -9,6 +9,10 @@ trainers, light encounter changes, and a few custom-flavored moves.
 This repository contains source code only. It does not include any commercial
 ROMs, generated `.gba` files, save files, or copyrighted game dumps.
 
+## Play it now
+
+Play in your browser: <https://aislop-web-production.up.railway.app/>
+
 ## Current v0.1 Direction
 
 - YouTube demo slice from the bedroom all the way to RUSTBORO CITY. The player
