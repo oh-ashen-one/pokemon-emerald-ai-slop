@@ -6,7 +6,15 @@ Route103_MapScripts::
 Route103_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
+	call_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, Route103_EventScript_ShowRouteRival
 	end
+
+@ Until the Route 103 rival is actually defeated, make sure she (and the
+@ adjacent overworld prototype) are present so a loss never soft-locks the
+@ player out of the rematch.
+Route103_EventScript_ShowRouteRival::
+	clearflag FLAG_HIDE_ROUTE_103_RIVAL
+	return
 
 Route103_OnLoad:
 	call_if_set FLAG_SYS_GAME_CLEAR, Route103_EventScript_OpenAlteringCave
@@ -138,6 +146,7 @@ Route103_EventScript_RivalExitFacingSouth::
 
 Route103_EventScript_RivalEnd::
 	removeobject LOCALID_ROUTE103_RIVAL
+	setflag FLAG_HIDE_ROUTE_103_RIVAL
 	setvar VAR_BIRCH_LAB_STATE, 4
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103

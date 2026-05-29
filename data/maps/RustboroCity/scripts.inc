@@ -1288,3 +1288,16 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_EventScript_RichKid::
+	msgbox RustboroCity_Text_RichKid, MSGBOX_NPC
+	end
+
+RustboroCity_Text_RichKid:
+	.string "Daddy's a SEED investor. He put eight\n"
+	.string "million into a POKéMON that doesn't\l"
+	.string "exist yet.\p"
+	.string "He says it's not vaporware, it's\n"
+	.string "“pre-revenue.”\p"
+	.string "I have a TRAINER who plays the game\n"
+	.string "for me. I just hold the cash.$"
