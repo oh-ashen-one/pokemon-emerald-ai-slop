@@ -62,7 +62,9 @@ OldaleTown_Mart_Text_ImGoingToBuyPokeBalls:
 	.string "whatever survived the prompt queue.$"
 
 OldaleTown_Mart_Text_RestoreHPWithPotion:
-	.string "If a prototype loses all its HP,\n"
-	.string "it faints like any normal POKéMON.\p"
-	.string "A POTION is cheaper than asking an\n"
-	.string "AI agent to debug the corpse.$"
+	.string "Oh, the glasses? I vibe-code the\n"
+	.string "MART inventory system.\p"
+	.string "It's 12,000 lines and none of us\n"
+	.string "know which 40 actually run.\p"
+	.string "A POTION still works though. Some\n"
+	.string "things the AI couldn't break yet.$"

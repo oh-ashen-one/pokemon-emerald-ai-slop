@@ -6,6 +6,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_QuintyPlump
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinjaBoy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Twin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boy1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AiSlopCoder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AiSlopSuit;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AiSlopBeanie;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Girl1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Boy2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Girl2;
@@ -410,6 +413,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,
+    [OBJ_EVENT_GFX_AI_SLOP_CODER] =            &gObjectEventGraphicsInfo_AiSlopCoder,
+    [OBJ_EVENT_GFX_AI_SLOP_SUIT] =             &gObjectEventGraphicsInfo_AiSlopSuit,
+    [OBJ_EVENT_GFX_AI_SLOP_BEANIE] =           &gObjectEventGraphicsInfo_AiSlopBeanie,
     [OBJ_EVENT_GFX_GIRL_1] =                   &gObjectEventGraphicsInfo_Girl1,
     [OBJ_EVENT_GFX_BOY_2] =                    &gObjectEventGraphicsInfo_Boy2,
     [OBJ_EVENT_GFX_GIRL_2] =                   &gObjectEventGraphicsInfo_Girl2,

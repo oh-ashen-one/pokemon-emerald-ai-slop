@@ -38,15 +38,19 @@ OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 	end
 
 OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
-	.string "That PC in the corner accepts any\n"
-	.string "TRAINER's storage data.\p"
-	.string "It has only eaten two save files,\n"
-	.string "which is excellent for a prototype.$"
+	.string "I'm in management. I don't code.\p"
+	.string "I align the team around a vision of\n"
+	.string "synergistic POKéMON outcomes.\p"
+	.string "Mostly I move the deadline and let\n"
+	.string "the kid in the beanie panic.$"
 
 OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
-	.string "POKéMON CENTERS are great!\p"
-	.string "They heal your team for free, which\n"
-	.string "means this demo can afford bad ideas.$"
+	.string "I have not slept since the starter\n"
+	.string "demo shipped. Love the beanie though?\p"
+	.string "I'm the only engineer left. The suit\n"
+	.string "promised this would be “a quick MVP.”\p"
+	.string "POKéMON CENTERS heal for free, which\n"
+	.string "is the only sustainable thing here.$"
 
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
 	.string "The WIRELESS CLUB upstairs is still\n"

@@ -57,6 +57,18 @@ static const struct SpriteFrameImage sPicTable_Boy1[] = {
     overworld_ascending_frames(gObjectEventPic_Boy1, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_AiSlopCoder[] = {
+    overworld_ascending_frames(gObjectEventPic_AiSlopCoder, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AiSlopSuit[] = {
+    overworld_ascending_frames(gObjectEventPic_AiSlopSuit, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AiSlopBeanie[] = {
+    overworld_ascending_frames(gObjectEventPic_AiSlopBeanie, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Girl1[] = {
     overworld_ascending_frames(gObjectEventPic_Girl1, 2, 4),
 };

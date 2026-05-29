@@ -145,8 +145,6 @@ Route103_EventScript_RivalEnd::
 	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 	savebgm MUS_DUMMY
 	fadedefaultbgm
-	delay 30
-	msgbox Route103_Text_DemoComplete, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -361,17 +359,6 @@ Route103_Text_BrendanTimeToHeadBack:
 	.string "even though it is clearly experimental.\p"
 	.string "We should head back before he ships\n"
 	.string "this as version 1.0.$"
-
-Route103_Text_DemoComplete:
-	.string "AI SLOP DEMO SLICE COMPLETE\p"
-	.string "You reached the end of the intended\n"
-	.string "15-minute proof-of-concept path.\p"
-	.string "The prototype has shown: custom\n"
-	.string "starters, cursed sprites, new text,\n"
-	.string "AI-named moves, wild overworld bugs,\n"
-	.string "and one rival balance test.\p"
-	.string "Everything past this point is still\n"
-	.string "plain old HOENN wearing a lab coat.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My prototype is staggeringly tired.\p"
