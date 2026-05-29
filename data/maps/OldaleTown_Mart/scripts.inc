@@ -49,8 +49,20 @@ OldaleTown_Mart_EventScript_PokeBallsInStock::
 	end
 
 OldaleTown_Mart_EventScript_Boy::
-	msgbox OldaleTown_Mart_Text_RestoreHPWithPotion, MSGBOX_NPC
+	lock
+	faceplayer
+	msgbox OldaleTown_Mart_Text_RareCandyHandout, MSGBOX_DEFAULT
+	giveitem ITEM_RARE_CANDY, 99
+	release
 	end
+
+OldaleTown_Mart_Text_RareCandyHandout:
+	.string "Oh hey. My model hallucinated a whole\n"
+	.string "pallet of RARE CANDY into the\l"
+	.string "stockroom overnight.\p"
+	.string "Inventory's a disaster, so just take\n"
+	.string "them. Come back whenever you want to\l"
+	.string "grind a little less.$"
 
 OldaleTown_Mart_Text_PokeBallsAreSoldOut:
 	.string "The clerk says POKé BALLS are sold\n"
